@@ -1,22 +1,15 @@
 # Manifest file downloaded from fusion
-externalId: tr-ts_asset_mapping
-name: ts_asset_mapping
-query: >
-  SELECT ts.externalId AS externalId,
-        ast.id AS assetId
-  FROM `_cdf`.`timeseries` AS ts
-  INNER JOIN `_cdf`.`assets` AS ast ON split(ts.externalId, ":") [0] = ast.externalId
+externalId: tr-ts_assets_mapping
+name: ts_assets_mapping
+query:
+    file: transformation.sql
 
 destination:
-  type: asset_hierarchy
+  type: timeseries
 ignoreNullFields: true
 shared: true
-action: upsert
-schedule:
-  interval: 0 * * * *
-  isPaused: false
-dataSetExternalId: src:001:sap:ds
-
+action: update
+dataSetExternalId: uc:001:oee:ds
 # Specify credentials separately like this:
 # authentication:
 #   read:
@@ -41,12 +34,12 @@ dataSetExternalId: src:001:sap:ds
 #     audience: ${WRITE_CDF_AUDIENCE}
 # Or together like this:
 authentication:
-  clientId: ${COGNITE_CLIENT_ID}
-  clientSecret: ${COGNITE_CLIENT_SECRET}
-  tokenUrl: https://login.microsoftonline.com/16e3985b-ebe8-4e24-9da4-933e21a9fc81/oauth2/v2.0/token
+  clientId: ${CLIENT_ID}
+  clientSecret: ${CLIENT_SECRET}
+  tokenUrl: ${TOKEN_URL}
   # Optional: If idP requires providing the scopes
   cdfProjectName: ${CDF_PROJECT_NAME}
   scopes:
-    - https://westeurope-1.cognitedata.com/.default
-  # Optional: If idP requires providing the audience
-  # audience: ${AUDIENCE}
+   - ${SCOPES}
+#   # Optional: If idP requires providing the audience
+#   audience: ${AUDIENCE}
