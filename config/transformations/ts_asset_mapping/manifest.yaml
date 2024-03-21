@@ -40,6 +40,6 @@ authentication:
   # Optional: If idP requires providing the scopes
     cdfProjectName: ${CDF_PROJECT_NAME}
     scopes:
-      - ${SCOPES}
+        - ${SCOPES}
 #   # Optional: If idP requires providing the audience
 #   audience: ${AUDIENCE}
