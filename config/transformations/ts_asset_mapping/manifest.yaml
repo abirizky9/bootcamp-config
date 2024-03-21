@@ -42,4 +42,4 @@ authentication:
     scopes:
         - https://westeurope-1.cognitedata.com/.default
 #   # Optional: If idP requires providing the audience
-#   audience: ${AUDIENCE}
+#   audience: ${AUDIENCE} #
