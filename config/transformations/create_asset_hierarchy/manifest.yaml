@@ -2,10 +2,6 @@
 externalId: tr-create_asset_hierarchy
 name: create_asset_hierarchy
 query: >
-
-  /* {"version":1,"sourceType":"raw","mappings":[{"from":"","to":"externalId","asType":"STRING"},{"from":"","to":"parentExternalId","asType":"STRING"},{"from":"","to":"source","asType":"STRING"},{"from":"","to":"name","asType":"STRING"},{"from":"","to":"description","asType":"STRING"},{"from":"","to":"metadata","asType":"MAP<STRING, STRING>"},{"from":"","to":"dataSetId","asType":"BIGINT"},{"from":"","to":"labels","asType":"ARRAY<STRING>"}]} */
-
-
   SELECT
     external_id AS externalId,
     IF(
@@ -22,6 +18,7 @@ query: >
     Dataset_id('src:001:sap:ds') AS dataSetId
   FROM
     `src:001:sap:db`.assets
+
 destination:
   type: asset_hierarchy
 ignoreNullFields: true
