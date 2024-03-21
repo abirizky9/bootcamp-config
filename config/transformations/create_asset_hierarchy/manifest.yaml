@@ -1,4 +1,4 @@
-# Manifest file downloaded from fusion.
+# Manifest file downloaded from fusion
 externalId: tr-create_asset_hierarchy
 name: create_asset_hierarchy
 query: >
@@ -18,7 +18,7 @@ query: >
     Dataset_id('src:001:sap:ds') AS dataSetId
   FROM
     `src:001:sap:db`.assets
-    
+
 destination:
   type: asset_hierarchy
 ignoreNullFields: true
