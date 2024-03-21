@@ -11,7 +11,7 @@ shared: true
 action: upsert
 schedule:
     interval: 0 * * * *
-  isPaused: false
+    isPaused: false
 dataSetExternalId: src:001:sap:ds
 # Specify credentials separately like this:
 # authentication:
@@ -41,8 +41,8 @@ authentication:
     clientSecret: ${CLIENT_SECRET}
     tokenUrl: ${TOKEN_URL}
   # Optional: If idP requires providing the scopes
-  cdfProjectName: ${CDF_PROJECT_NAME}
-  scopes:
+    cdfProjectName: ${CDF_PROJECT_NAME}
+    scopes:
       - ${SCOPES}
 #   # Optional: If idP requires providing the audience
 #   audience: ${AUDIENCE}
