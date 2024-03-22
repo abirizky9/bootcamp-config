@@ -36,12 +36,16 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green",
+                  "color": "dark-red",
                   "value": null
                 },
                 {
-                  "color": "red",
-                  "value": 0.4447
+                  "color": "orange",
+                  "value": 0.8
+                },
+                {
+                  "color": "green",
+                  "value": 0.9
                 }
               ]
             },
@@ -51,7 +55,7 @@
         },
         "gridPos": {
           "h": 8,
-          "w": 12,
+          "w": 7,
           "x": 0,
           "y": 0
         },
@@ -220,21 +224,23 @@
                 }
               ]
             },
-            "unit": "percentunit"
+            "unit": "none"
           },
           "overrides": []
         },
         "gridPos": {
           "h": 8,
-          "w": 12,
-          "x": 12,
+          "w": 17,
+          "x": 7,
           "y": 0
         },
         "id": 4,
         "options": {
           "legend": {
             "calcs": [
-              "mean"
+              "mean",
+              "min",
+              "max"
             ],
             "displayMode": "list",
             "placement": "bottom",
@@ -312,7 +318,7 @@
               "tsKeys": []
             },
             "granularity": "",
-            "label": "",
+            "label": "Production line average",
             "latestValue": false,
             "refId": "A",
             "relationshipsQuery": {
@@ -442,12 +448,16 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green",
+                  "color": "dark-red",
                   "value": null
                 },
                 {
-                  "color": "red",
-                  "value": 80
+                  "color": "orange",
+                  "value": 0.8
+                },
+                {
+                  "color": "green",
+                  "value": 0.9
                 }
               ]
             },
@@ -457,7 +467,7 @@
         },
         "gridPos": {
           "h": 8,
-          "w": 12,
+          "w": 7,
           "x": 0,
           "y": 8
         },
@@ -626,21 +636,23 @@
                 }
               ]
             },
-            "unit": "percentunit"
+            "unit": "none"
           },
           "overrides": []
         },
         "gridPos": {
           "h": 8,
-          "w": 12,
-          "x": 12,
+          "w": 17,
+          "x": 7,
           "y": 8
         },
         "id": 5,
         "options": {
           "legend": {
             "calcs": [
-              "mean"
+              "mean",
+              "min",
+              "max"
             ],
             "displayMode": "list",
             "placement": "bottom",
@@ -718,7 +730,7 @@
               "tsKeys": []
             },
             "granularity": "",
-            "label": "",
+            "label": "Production line average",
             "latestValue": false,
             "refId": "A",
             "relationshipsQuery": {
@@ -1024,12 +1036,16 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green",
+                  "color": "semi-dark-red",
                   "value": null
                 },
                 {
-                  "color": "red",
-                  "value": 80
+                  "color": "orange",
+                  "value": 0.8
+                },
+                {
+                  "color": "green",
+                  "value": 0.9
                 }
               ]
             },
@@ -1039,7 +1055,7 @@
         },
         "gridPos": {
           "h": 8,
-          "w": 12,
+          "w": 7,
           "x": 0,
           "y": 16
         },
@@ -1208,7 +1224,7 @@
                 }
               ]
             },
-            "unit": "percentunit"
+            "unit": "none"
           },
           "overrides": [
             {
@@ -1239,15 +1255,17 @@
         },
         "gridPos": {
           "h": 8,
-          "w": 12,
-          "x": 12,
+          "w": 17,
+          "x": 7,
           "y": 16
         },
         "id": 7,
         "options": {
           "legend": {
             "calcs": [
-              "mean"
+              "mean",
+              "min",
+              "max"
             ],
             "displayMode": "list",
             "placement": "bottom",
@@ -1325,7 +1343,7 @@
               "tsKeys": []
             },
             "granularity": "",
-            "label": "",
+            "label": "Production line average",
             "latestValue": false,
             "refId": "A",
             "relationshipsQuery": {
@@ -1631,12 +1649,16 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green",
+                  "color": "red",
                   "value": null
                 },
                 {
-                  "color": "red",
-                  "value": 80
+                  "color": "orange",
+                  "value": 0.8
+                },
+                {
+                  "color": "green",
+                  "value": 0.9
                 }
               ]
             },
@@ -1646,7 +1668,7 @@
         },
         "gridPos": {
           "h": 8,
-          "w": 12,
+          "w": 7,
           "x": 0,
           "y": 24
         },
@@ -1815,21 +1837,23 @@
                 }
               ]
             },
-            "unit": "percentunit"
+            "unit": "none"
           },
           "overrides": []
         },
         "gridPos": {
           "h": 8,
-          "w": 12,
-          "x": 12,
+          "w": 17,
+          "x": 7,
           "y": 24
         },
         "id": 9,
         "options": {
           "legend": {
             "calcs": [
-              "mean"
+              "mean",
+              "min",
+              "max"
             ],
             "displayMode": "list",
             "placement": "bottom",
@@ -1907,7 +1931,7 @@
               "tsKeys": []
             },
             "granularity": "",
-            "label": "",
+            "label": "Production line average",
             "latestValue": false,
             "refId": "A",
             "relationshipsQuery": {
@@ -2118,7 +2142,7 @@
       "list": [
         {
           "current": {
-            "selected": true,
+            "selected": false,
             "text": "oslo",
             "value": "oslo"
           },
@@ -2187,9 +2211,9 @@
         },
         {
           "current": {
-            "selected": true,
-            "text": "Extrusion Line",
-            "value": "1479805229449713"
+            "selected": false,
+            "text": "Pasteurization and Homogenization",
+            "value": "4099033959803852"
           },
           "datasource": {
             "type": "cognitedata-datasource",
@@ -2218,8 +2242,8 @@
         {
           "current": {
             "selected": false,
-            "text": "Wrapping",
-            "value": "1988177943913186"
+            "text": "Balance Tank",
+            "value": "5728361332937736"
           },
           "datasource": {
             "type": "cognitedata-datasource",
@@ -2248,7 +2272,7 @@
       ]
     },
     "time": {
-      "from": "now-24h",
+      "from": "now-2d",
       "to": "now"
     },
     "timeRangeUpdatedDuringEditOrView": false,
@@ -2256,6 +2280,6 @@
     "timezone": "browser",
     "title": "Bootcamp Dashboard",
     "uid": "edgek6r9kd7nkf",
-    "version": 12,
+    "version": 15,
     "weekStart": ""
   }
